@@ -1,0 +1,6 @@
+f = open(r"C:\Users\MRay\Downloads\Ao_C2022_Python\day1.txt")
+r = f.read()
+s = r.split('\n')
+g = s[0].split(' ')
+print(g)
+print(s[2])
