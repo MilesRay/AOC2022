@@ -1,6 +1,14 @@
-f = open(r"C:\Users\MRay\Downloads\Ao_C2022_Python\day1.txt")
+f = open("Day1.txt")
 r = f.read()
 s = r.split('\n')
-g = s[0].split(' ')
-print(g)
-print(s[2])
+highest = 0
+count = 0
+for cell in range(len(s)):
+    if not s[cell]:
+        if(count > highest):
+            highest = count
+        count = 0
+    else:
+        count += int(s[cell])
+
+print(highest)
